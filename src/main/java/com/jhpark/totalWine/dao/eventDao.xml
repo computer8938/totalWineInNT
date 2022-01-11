@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jhpark.totalWine.dao.EventDao">
+
+	<select id="getEventList" parameterType="map" resultType="EventDTO">
+		SELECT * FROM t_event ORDER BY regDate DESC LIMIT 0, 5
+	</select> 
+</mapper>
